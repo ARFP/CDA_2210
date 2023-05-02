@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training_Fonction", "Training_Fonction\Training_Fonction.csproj", "{CBA3631E-F92F-4130-A42A-66D9A2888C53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pendu", "pendu\pendu.csproj", "{79E34D2E-7E16-4E18-9880-7B149C2B3F52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBA3631E-F92F-4130-A42A-66D9A2888C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA3631E-F92F-4130-A42A-66D9A2888C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA3631E-F92F-4130-A42A-66D9A2888C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA3631E-F92F-4130-A42A-66D9A2888C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E34D2E-7E16-4E18-9880-7B149C2B3F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E34D2E-7E16-4E18-9880-7B149C2B3F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E34D2E-7E16-4E18-9880-7B149C2B3F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E34D2E-7E16-4E18-9880-7B149C2B3F52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B00515D-C287-405B-8B0B-117D062D13A2}
+	EndGlobalSection
+EndGlobal

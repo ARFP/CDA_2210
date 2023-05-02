@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="employees">
+  <Items>
+    <LogicalFolder Name="Connexions" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="DESKTOP-P24I4CG\LOCALHOST:employees">
+          <Created>2023-02-15T14:43:46.7174156+01:00</Created>
+          <Type>SQL</Type>
+          <Server>DESKTOP-P24I4CG\LOCALHOST</Server>
+          <UserName>employees</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Requête</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Requêtes" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="01 - employees - DDL DML.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-P24I4CG\LOCALHOST:False:employees</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-P24I4CG\LOCALHOST</AssociatedConnSrvName>
+          <AssociatedConnUserName>employees</AssociatedConnUserName>
+          <FullPath>01 - employees - DDL DML.sql</FullPath>
+        </FileNode>
+        <FileNode Name="02 - employees - DQL.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-P24I4CG\LOCALHOST:False:employees</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-P24I4CG\LOCALHOST</AssociatedConnSrvName>
+          <AssociatedConnUserName>employees</AssociatedConnUserName>
+          <FullPath>02 - employees - DQL.sql</FullPath>
+        </FileNode>
+        <FileNode Name="99 - tests injections.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-P24I4CG\LOCALHOST:False:employees</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-P24I4CG\LOCALHOST</AssociatedConnSrvName>
+          <AssociatedConnUserName>employees</AssociatedConnUserName>
+          <FullPath>99 - tests injections.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Divers" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
