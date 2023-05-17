@@ -5,16 +5,29 @@ namespace BankTransactions.WebApp.Controllers
 {
     public class ExampleController : Controller
     {
+        /// <summary>
+        /// GET /example/index 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
-            return View(new object());
+            return View(); // Retourne la vue "Index" (nom de la méthode)
         }
 
+        /// <summary>
+        /// GET /example/namedview/
+        /// </summary>
+        /// <returns></returns>
         public IActionResult NamedView()
         {
-            return View("MySuperView");
+            return View("MySuperView"); // retourne la vue "MySuperView"
         }
 
+        /// <summary>
+        /// GET /example/dataview/
+        /// Gestion de ViewData et ViewBag : https://www.tektutorialshub.com/asp-net-core/asp-net-core-viewbag-viewdata/
+        /// </summary>
+        /// <returns></returns>
         public IActionResult DataView()
         {
             ViewData["chaine1"] = "Voici une super chaine de caractères !";
@@ -24,6 +37,10 @@ namespace BankTransactions.WebApp.Controllers
             return View();
         }
 
+        /// <summary>
+        /// GET /example/modelview/
+        /// </summary>
+        /// <returns></returns>
         public IActionResult ModelView()
         {
             BankTransaction transaction = new()
@@ -35,7 +52,7 @@ namespace BankTransactions.WebApp.Controllers
                 Transaction_Amount = (decimal) 1000.45
             };
 
-            return View(transaction);
+            return View(transaction); // transmet l'objet en tant que "modèle". 
         }
     }
 }
