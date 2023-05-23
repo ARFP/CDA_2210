@@ -1,0 +1,77 @@
+<emplois>
+    <emploi>
+        <intitule>Developpeur PHP</intitule>
+        <ville>Paris</ville>
+        <descriptionPoste>
+            <taches>
+                <tache>Faire du PHP</tache>
+            </taches>
+            <avantages>
+                <avantage>Café offert</avantage>
+                <avantage>13eme mois</avantage>
+                <avantage>Primes frequentes</avantage>
+            </avantages>
+            <profilRecherche>Personne formattable aux codes de l'entreprise, tout juste sorti d'etudes mais avec deja 10 ans d'experience en PHP.</profilRecherche>
+        </descriptionPoste>
+        <competences>
+            <competence>Maitrise parfaite et absolue du PHP</competence>
+            <competence>Travail en équipe</competence>
+            <competence>Autonomie</competence>
+            <competence>Anticipation des besoins du projet</competence>
+            <competence>Communication</competence>
+        </competences>
+        <dateDebut>01/01/2024</dateDebut>
+        <salaireAnnuel devise="euros">40000</salaireAnnuel>
+        <mail>jaimelephp@gmail.com</mail>
+    </emploi>
+    <emploi>
+        <intitule>Developpeur JAVA</intitule>
+        <ville>Mulhouse</ville>
+        <descriptionPoste>
+            <taches>
+                <tache>Faire du JAVA</tache>
+            </taches>
+            <avantages>
+                <avantage>Café offert</avantage>
+                <avantage>13eme mois</avantage>
+                <avantage>Primes frequentes</avantage>
+            </avantages>
+            <profilRecherche>Personne formattable aux codes de l'entreprise, tout juste sorti d'etudes mais avec deja 10 ans d'experience en PHP.</profilRecherche>
+        </descriptionPoste>
+        <competences>
+            <competence>Maitrise parfaite et absolue du JAVA</competence>
+            <competence>Travail en équipe</competence>
+            <competence>Autonomie</competence>
+            <competence>Anticipation des besoins du projet</competence>
+            <competence>Communication</competence>
+        </competences>
+        <dateDebut>01/01/2024</dateDebut>
+        <salaireAnnuel devise="euros">40000</salaireAnnuel>
+        <mail>jaimelejava@gmail.com</mail>
+    </emploi>
+    <emploi>
+        <intitule>Developpeur NodeJS</intitule>
+        <ville>Toulouse</ville>
+        <descriptionPoste>
+            <taches>
+                <tache>Faire du NodeJS</tache>
+            </taches>
+            <avantages>
+                <avantage>Café offert</avantage>
+                <avantage>13eme mois</avantage>
+                <avantage>Primes frequentes</avantage>
+            </avantages>
+            <profilRecherche>Personne formattable aux codes de l'entreprise, tout juste sorti d'etudes mais avec deja 10 ans d'experience en PHP.</profilRecherche>
+        </descriptionPoste>
+        <competences>
+            <competence>Maitrise parfaite et absolue du NodeJS</competence>
+            <competence>Travail en équipe</competence>
+            <competence>Autonomie</competence>
+            <competence>Anticipation des besoins du projet</competence>
+            <competence>Communication</competence>
+        </competences>
+        <dateDebut>01/01/2024</dateDebut>
+        <salaireAnnuel devise="euros">40000</salaireAnnuel>
+        <mail>jaimelenodejs@gmail.com</mail>
+    </emploi>
+</emplois>

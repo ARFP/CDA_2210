@@ -1,0 +1,121 @@
+:root {
+    --light: white;
+    --dark: #111111;
+    --primary-color: #0075F2;
+    --secondary-color: #E3F2FD;
+    --tertiary-color: #DB5461;  
+}
+
+body {
+    color: var(--primary-color); 
+    /* color: #FFCC00;
+    color: rgb(255, 200, 0); */
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    min-width:100px;
+    max-width: 100%;
+}
+
+main {
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+section {
+    border: 1px solid var(--primary-color);
+}
+
+h1, h2, h3, h4, h3, h6 {
+    background-color: var(--primary-color);
+    color: var(--light);
+    padding: 5px;
+}
+
+section h1:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* * = sélecteur universel (tous les éléments) */
+* > h1:first-child {
+    margin-top: 0;
+}
+
+p {
+    margin:0;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+
+/* cible TOUS les éléments qui ont la class="grid" */
+.grid {
+    display: grid;
+    grid-template-columns: 280px 1fr ;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:    "A B" 
+                            "A C" 
+                            "A D";
+    column-gap: 10px;
+    /*row-gap: 20px;
+    gap: 10px;*/
+}
+
+/* cible l'élément dont l'id = "skills" */
+#skills {
+    grid-area: B;
+}
+
+#xp {
+    grid-area: C;
+}
+
+#formations {
+    grid-area: D;
+}
+
+#aside { /* cible l'id */
+    grid-area: A;
+    border: 1px solid var(--primary-color);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+.aside { /* cible les classes */
+
+}
+
+aside { /* cible les balises */
+
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "B" 
+                             "C" 
+                             "D"
+                             "A";
+    }
+}
+
+@media print {
+    header {
+        background-color: aqua;
+    }
+}
+
