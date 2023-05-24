@@ -1,0 +1,35 @@
+:root {
+    --primary: rgb(230, 75, 60); /* ROUGE */
+    --secondary: rgb(235, 240, 240); /* GRIS */
+    --light: white;
+}
+
+body {
+    margin: 0;
+}
+
+body > header {
+    background: var(--primary);
+}
+
+body > header > h1 {
+    margin: 0;
+    padding: 20px 0;
+   /* padding-top: 10px;
+    padding-right: 80px;
+    padding-bottom: 500px;
+    padding-left: 50px;*/
+    text-align: center;
+    color: var(--secondary);
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    width: 1000px;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
