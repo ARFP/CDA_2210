@@ -6,6 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        @keyframes epileptik {
+            0% {
+                background-color: aqua;
+            }
+            10% {
+                background-color: blueviolet;
+            }
+            20% {
+                background-color: yellow;
+            }
+            30% {
+                background-color: white;
+            }
+            40% {
+                background-color: black;
+            }
+            50% {
+                background-color: green;
+            }
+            60% {
+                background-color: gray;
+            }
+            70% {
+                background-color: red;
+            }
+            80% {
+                background-color: pink;
+            }
+            90% {
+                background-color: orange;
+            }
+            100% {
+                background-color: olive;
+            }
+        }
+
+        @keyframes toto {
+            from {
+                width: 30rem;
+                border-radius: 0;
+                margin-top: 0;
+                transform: rotate(0);
+            }
+
+            to {
+                width: 60rem;
+                border-radius: 50%;
+                margin-top: 30rem;
+                transform: rotate(1080deg);
+            }
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -14,14 +67,24 @@
         }
         body {
             font-size: 1.6rem;
+            /*animation-name: epileptik;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;*/
         }
         article {
-            border: 1px solid black;
+            border: 1px solid red;
             width: 30rem;
             height: 20rem;
             font-size: 1rem;
             padding: 10px;
-            /*overflow: hidden;*/
+            transform: rotate(30deg);
+            filter: blur(1px) grayscale(100%);
+            
+            animation-name: toto;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
         }
         p {
             font-size: 2rem;
@@ -29,12 +92,25 @@
         span {
             font-size: 2em;
         }
+        audio {
+            display:none;
+        }
     </style>
 </head>
 <body>
-    <article>
+    <button id="bouton">toto</button>
+    <article style="display:none;">
         <p>- Bonjour, je suis du <span>texte</span> !</p>
         <p>- HO ! Du texte qui parle !</p>
     </article>
+    
+    <script>
+        const btn = document.getElementById('bouton');
+
+        btn.addEventListener('click', () => {
+            const audio = new Audio('microsoft.mp3');
+            audio.play();
+        });
+    </script>
 </body>
 </html>
