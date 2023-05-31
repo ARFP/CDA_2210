@@ -1,45 +1,24 @@
+import { ZipCode } from './ZipCode.js';
 
-/* const constante = "";
-var variable1;
-let variable2; */
+// ajouts des évènements de l'interface utilisateur
 
-// Télécharger une ressource distante
+let zipcodeInput = document.getElementById('zipcode');
 
-// option 1
-// let xhr = new XMLHttpRequest();
+console.log(zipcodeInput); // affiche l'élément dans la console
+console.log(zipcodeInput.name); // affiche un attribut de l'élément
 
-// option2
-// Utiliser l'API fetch de Javascript
-fetch('https://arfp.github.io/tp/web/frontend/zipcodes/zipcodes.json')
-.then(response => response.json())
-.then(function(json) {
-    console.log(json);
-})
-.catch(function(error) {
-    // traitement des exceptions (Error)
+zipcodeInput.addEventListener('keyup', (event) => {
+    var reg = new RegExp('^[0-9]{5}$');
+    let value = event.target.value; // event.target )= élément qui a déclanché l'évènement
+
+    if(reg.test(value)) {
+        console.log(value);
+        // rechercher si le code postal existe 
+        zipcodes.search(value);
+        console.log(zipcodes);
+    }
 });
 
-try {
-    let response = await fetch('https://arfp.github.io/tp/web/frontend/zipcodes/zipcodes.json');
-    let json = await response.json();
-    console.log(json);
-} catch(error) {
-    // traitement de l'erreur
-}
 
-//
-
-class ZipCode 
-{
-    constructor()
-    {
-        this.datasource = "";
-        this.zipcodes = [];
-    }
-
-
-    search(zipcode)
-    {
-        
-    }
-}
+const zipcodes = new ZipCode();
+zipcodes.load();
