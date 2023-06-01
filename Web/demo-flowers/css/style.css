@@ -1,0 +1,15 @@
+label, input {
+    display: block;
+    width: 300px;
+}
+input {
+    width: 50px;
+}
+
+#field {
+    margin: 1rem;
+}
+
+#field img {
+    height: 32px;
+}
