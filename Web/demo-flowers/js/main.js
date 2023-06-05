@@ -17,11 +17,8 @@ const maFonction = () => {
 }
 
 counter.addEventListener('change', function() {
-
     if(interval != undefined) {
         clearInterval(interval);
     }
     interval = setInterval(maFonction, 1000/counter.value);
-    
-    
 });
