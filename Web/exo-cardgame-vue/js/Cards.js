@@ -8,7 +8,7 @@ class Cards
      */
     constructor(_url)
     {
-        this.cardsCollection= [];
+        this.cardsCollection = [];
         this.source=_url;
 
     }

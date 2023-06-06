@@ -6,6 +6,7 @@ await cards.getCards();
 
 const myThead = document.getElementById("myThead");
 const myTbody = document.getElementById("myTbody");
+const myTFoot = document.getElementById("myTFoot");
 
 function createTable()
 {
@@ -57,7 +58,37 @@ function createTableHeader(){
 
 
 function createTableFooter(){
-    console.log(cards.getHigherArmorCard());
+ 
+    createTableRow(cards.getHigherArmorCard(), "Armor");
+    createTableRow(cards.getHigherAttackCard(), "Attack");
+    createTableRow(cards.getHigherPlayedCard(),"Most Played");
+    createTableRow(cards.getHigherVictoryCard(),"Most victory");
+}
+
+/**
+ * 
+ * @param {Card} card 
+ */
+function createTableRow(card, dataType)
+{
+    let row = document.createElement('tr');
+    let data = document.createElement('td');
+
+    row.appendChild(data);
+    data.textContent = dataType;
+    data.colSpan = card.getValues().length;
+
+    myTFoot.appendChild(row);
+
+    let tr = document.createElement('tr');
+    myTFoot.appendChild(tr);
+
+    for (let data of card.getValues())
+    {
+        let cell = document.createElement('td');
+        cell.textContent = data;
+        tr.appendChild(cell);
+    }
 }
 
 createTable();
