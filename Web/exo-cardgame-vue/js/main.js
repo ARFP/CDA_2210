@@ -5,7 +5,8 @@ const app = {
     data() {
         return {
             title: "Cardgame",
-            cards: null
+            cards: null,
+            first: null,
         }
     },
 

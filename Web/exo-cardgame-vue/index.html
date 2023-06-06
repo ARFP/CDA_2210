@@ -12,9 +12,13 @@
 <body>
     <div id="app">
         <h1>{{ title }}</h1>
-        <table v-if="cards != null">
+        <table v-if="cards != null && cards.cardsCollection.length > 0">
             <thead>
-    
+                <tr>
+                    <td v-for="attribut in cards.getFirst().getKeys()">
+                        {{ attribut }}
+                    </td>
+                </tr>
             </thead>
     
             <tbody>
@@ -24,7 +28,7 @@
             </tbody>
             
             <tfoot>
-    
+                
             </tfoot>
         </table>
     </div>
