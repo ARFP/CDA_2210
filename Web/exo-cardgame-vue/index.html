@@ -15,7 +15,7 @@
         <table v-if="cards != null && cards.cardsCollection.length > 0">
             <thead>
                 <tr>
-                    <td v-for="attribut in cards.getFirst().getKeys()">
+                    <td v-for="attribut in cardKeys">
                         {{ attribut }}
                     </td>
                 </tr>
@@ -28,7 +28,22 @@
             </tbody>
             
             <tfoot>
-                
+                <template v-for="stat in myStats">
+                    <tr>
+                        <td :colspan="myStatsLength">{{ stat }}</td>
+                    </tr>
+                    <tr>
+                        <td v-for="data in cards.getHigherStats(stat)">{{ data }}</td>
+                    </tr>
+                </template>
+            </tfoot>
+
+            <tfoot>
+                <template v-for="card in cards.getMyCards()">
+                    <tr>
+                        <td v-for="data in card.getValues()">{{ data }}</td>
+                    </tr>
+                </template>
             </tfoot>
         </table>
     </div>

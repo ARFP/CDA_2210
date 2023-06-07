@@ -62,17 +62,26 @@ class Cards
 
 
     getHigherPlayedCard(){
-        return this.cardsCollection.sort((a,b) => a.played - b.played).reverse()[0];
+        return this.getHigherStats('played');
     }
 
     getHigherVictoryCard(){
-        return this.cardsCollection.sort((a,b) => a.victory - b.victory).reverse()[0];
+        return this.cardsCollection.sort((a,b) => a['victory'] - b.victory).reverse()[0];
+    }
+
+    getMyCards() {
+        return [
+            this.getHigherAttackCard(),
+            this.getHigherArmorCard(),
+            this.getHigherPlayedCard(),
+            this.getHigherVictoryCard()
+        ]
     }
     
-    /*getHigherStats(statsName){
+    getHigherStats(statsName){
         return this.cardsCollection.sort(
-            (a,b)=> a[statsName]-b[statsName])[0];
-    }*/
+            (a,b)=> a[statsName]-b[statsName]).reverse()[0];
+    }
 }
 
 export { Cards };
