@@ -1,0 +1,26 @@
+*
+{
+    box-sizing: border-box
+}
+html
+{
+    font-size: 62.5%;
+}
+body
+{
+    font-size: 1.6rem;
+}
+
+/* Tableaux */
+#tableCereals
+{
+    border-collapse: collapse;
+}
+.keys,.valueTableCereals
+{
+    border: 0.1rem solid black;
+}
+.keys
+{
+    cursor: pointer;
+}

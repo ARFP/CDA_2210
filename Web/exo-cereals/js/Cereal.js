@@ -1,7 +1,7 @@
 class Cereal{
     constructor(cereal){
         Object.assign(this,cereal);
-        //this.ns=this.GetNS();
+        this.ns=this.getNS();
     }
     getNS(){
         if(this.rating > 80){

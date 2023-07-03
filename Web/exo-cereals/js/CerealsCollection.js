@@ -7,6 +7,7 @@ class CerealsCollection{
     async loadData(){
         let temp = await db.getDB("/cereals.json");
         this.data = temp["data"];
+       // this.data = temp.data; // Equivalent de la ligne précedente
         this.data = this.data.map(c=>new Cereal(c));
     }
 }
