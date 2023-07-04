@@ -16,11 +16,11 @@ body
 {
     border-collapse: collapse;
 }
-.keys,.valueTableCereals
+.keys th,.valueTableCereals,.keysDel,.valueTableCereals td
 {
     border: 0.1rem solid black;
 }
-.keys
-{
+.keys th,.delButton
+{   
     cursor: pointer;
 }

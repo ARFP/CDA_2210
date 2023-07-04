@@ -10,5 +10,8 @@ class CerealsCollection{
        // this.data = temp.data; // Equivalent de la ligne précedente
         this.data = this.data.map(c=>new Cereal(c));
     }
+    delRow(cerealId){
+        this.data = this.data.filter(d=>d.id != cerealId);
+    }
 }
 export {CerealsCollection}
