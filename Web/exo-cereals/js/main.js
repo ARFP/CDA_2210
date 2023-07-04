@@ -35,11 +35,8 @@ inputList.forEach(i=>{i.addEventListener("click",(e)=>{
             letters.push(c.id);
         }
     });
-    console.log(letters)
-
+    console.log(letters);
     CerealsEvent.sortNutriscore(letters);
     cerealsTable.generateTable();
-
-
     })
 });
