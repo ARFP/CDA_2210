@@ -1,7 +1,31 @@
-th{
+body {
+    background-color: black;
+    color: lightgreen;
+}
+
+th {
     text-align: center;
 }
 
-td{
+td {
     text-align: center;
+    border: 1px solid lightblue;
+    padding: 5px;
+}
+
+table {
+    border: 1px solid currentColor;
+    border-collapse: collapse;
+}
+
+tr td {
+    background-color: gray;
+}
+
+tr:nth-child(even) td {
+    background-color: black;
+}
+
+tr:hover td {
+    background-color: #FFFF0055;
 }

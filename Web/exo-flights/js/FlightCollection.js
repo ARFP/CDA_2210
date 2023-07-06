@@ -43,7 +43,7 @@ class FlightCollection
 
         // si le boleen sortedAsc est evalué à faux, alors on inverse le tri
         if (!this.sortedAsc){
-        this.data.reverse()
+            this.data.reverse()
         }
 
         //on inverse le boleen comme cela le tri s'inversera au prochain clic
