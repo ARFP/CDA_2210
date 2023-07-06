@@ -3,11 +3,17 @@ class CerealsEvent{
     static sortDirection = true;
 
     static columnSortEvent(e){
-        if(typeof(CerealsEvent.cerealsCollection.data[0][e.target.dataset.name])!="string"){
-            CerealsEvent.cerealsCollection.data.sort((x,y)=>x[e.target.dataset.name]-y[e.target.dataset.name]);
+
+        let attributeName = e.target.dataset.name;
+        let firstCollectionItem =  CerealsEvent.cerealsCollection.data[0];
+
+        if(typeof(firstCollectionItem[attributeName]) != "string") {
+            CerealsEvent.cerealsCollection.data.sort((x,y) => x[e.target.dataset.name] - y[e.target.dataset.name]);
+
+            CerealsEvent.cerealsCollection.data.sort(function (x,y) { return x[attributeName] - y[attributeName] });
         }
         else{
-            CerealsEvent.cerealsCollection.data.sort((x,y)=>x[e.target.dataset.name].localeCompare(y[e.target.dataset.name]));
+            CerealsEvent.cerealsCollection.data.sort((x,y)=>x[attributeName].localeCompare(y[attributeName]));
         }
         if(CerealsEvent.sortDirection){
             CerealsEvent.cerealsCollection.data.reverse();

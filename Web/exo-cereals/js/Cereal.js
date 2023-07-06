@@ -3,6 +3,7 @@ class Cereal{
         Object.assign(this,cereal);
         this.ns=this.getNS();
     }
+    
     getNS(){
         if(this.rating > 80){
             return "A";

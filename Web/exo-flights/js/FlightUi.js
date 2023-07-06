@@ -21,13 +21,22 @@ class FlightUi
      */
     generateTable() 
     {
-        this.tbody.innerHTML = ""; // on vide le tableau
+        this.tbody.innerHTML = ""; // on vide le tableau 
 
         // pour chaque élément de la collection, on crée une ligne de tableau HTML
         this.collection.data.forEach(f => {
             let tr = this.generateRow(f); // création d'une ligne du tableau HTML
-            this.tbody.appendChild(tr); // insertion de la ligne dans le tbody courant
+            this.tbody.appendChild(tr); // insertion de la ligne dans le tbody courant 
         });
+
+       /* 
+            // Version alternative
+            // ne permet pas d'accéder au "this". 
+            // conclusion : ça ne fonctionne pas !
+            this.collection.data.forEach(function(f) {
+            let tr = this.generateRow(f); // création d'une ligne du tableau HTML
+            this.tbody.appendChild(tr); // insertion de la ligne dans le tbody courant
+        });*/
     }
 
     /**
