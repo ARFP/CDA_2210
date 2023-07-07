@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+        label {
+            display: inline-block;
+            width: 200px;
+        }
+        input {
+            border: 1px dotted blue;
+            color: green;
+        }
+        input[type="email"] {
+            border: 1px dotted red;
+            color: red;
+        }
+        ::placeholder {
+            color: red;
+        }
+        :valid {
+            border: 1px solid green;
+        }
+        :invalid {
+            border: 1px solid orange;
+        }
+        :hover {
+            border-color: blue;
+            transition: all ease 2s;
+        }   
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Etat civil</legend>
+            <div>
+                <label for="prenom">Prénom</label>
+                <input id="prenom" type="text" required="required" pattern="[a-zA-Z]{3,6}" title="entre 3 et 6 lettres" placeholder="Jean">
+            </div>
+            <div>
+                <label for="tel">Téléphone *</label>
+                <input id="tel" type="tel" placeholder="0601020304">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email">
+            </div>
+            <div>
+                <label for="ddn">Date de naissance</label>
+                <input id="ddn" type="date">
+                <input id="ddn" type="time">
+                <input id="ddn" type="datetime-local">
+            </div>
+        </fieldset>
+        
+        <div>
+            <input type="submit" value="Bouton de validation">
+            <button>Label du bouton</button>
+        </div>
+        <div>
+            <label for="ddn">Liste déroulante</label>
+            <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+        <div>
+            <label for="ddn">Accepter nos conditions ?</label>
+            <input type="checkbox" checked="checked">
+            <input type="checkbox">
+        </div>
+        <div>
+            <label for="ddn">La couleur du cheval blanc ?</label>
+            <input type="radio" name="identique"> Blanc
+            <input type="radio" name="identique"> Rouge
+            <input type="radio" name="identique"> Vert
+        </div>
+        <div>
+            <label for="clr">Une couleur ?</label>
+            <input type="color">
+        </div>
+        <div>
+            <label for="fichier">Fichier</label>
+            <input type="file">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,126 @@
+:root {
+    --primary: #CCDDFF; /* bleu */
+    --secondary: #CCFFDD; /* vert */
+    --tertiary: #FFDDCC; /* orange */
+    --light: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas: "H H H"
+                         "N M A"
+                         "F F F";
+}
+
+header {
+    background-color: var(--primary);
+    grid-area: H; 
+    text-align: center;
+}
+
+nav {
+    background-color: var(--tertiary);
+    grid-area: N;
+    padding: 1rem;
+}
+
+main {
+    background-color: var(--secondary);
+    grid-area: M;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row wrap; /* les 2 précedentes en 1 seule */
+    align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
+}
+
+h2 {
+    width: 100%;
+}
+
+article {
+    border: 1px solid black;
+    background-color: var(--light);
+    flex-basis: 200px; /* largeur d'un element dans une boite flex */
+    /*width: 200px;*/
+    transition: all ease 1s;
+}
+
+article:hover {
+    background-color: var(--tertiary);
+    flex-basis: 300px;
+}
+
+aside {
+    background-color: var(--tertiary);
+    grid-area: A;
+}
+
+footer {
+    background-color: var(--primary);
+    grid-area: F;
+    text-align: center;
+    padding: 2rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    /*list-style-image: url('../img/pikatchu.png');*/
+}
+
+ul.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+ul.menu li {
+    background-color: var(--light);
+    padding: 0;
+    flex-basis: 100%;
+}
+
+ul.menu a {
+    display: block;
+    padding: 1rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: darkred;
+    transition: all ease .6s;
+}
+
+a:visited {
+    color: violet;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:green;
+}
+
+a:active {
+    font-weight: bold;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/main.js" type="module"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Vols</h1>
+
+    <label>Rechercher</label>
+    <input type="search" id="searchField">
+
+    <h2>Dataset/Flights</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Flight ID</th>
+                <th>Start City</th>
+                <th>Arrival City</th>
+                <th>Start Time</th>
+                <th>Arrival Time</th>
+                <th id="flightDuration">Flight Duration</th>
+                <th>Airline Name</th>
+                <th>Plane Maker</th>
+                <th>Plane Ref</th>
+                <th>Plane Type</th>
+                <th>Plane Capacity</th>
+                <th>Seats Free</th>
+                <th>HH:MM:SS</th>
+            </tr>
+        </thead>
+        <tbody id="flightsBody">
+
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céréales</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" type="module"></script>
+    </head>
+<body>
+    <header>
+        <h1>Céréales</h1>
+        <fieldset>
+            <legend>Rechercher</legend>
+            <input type="search" id="inputSearch">
+        </fieldset>
+        <fieldset>
+            <legend>Filtrer</legend>
+            <fieldset id="cerealsNs">
+                <legend>Nutriscore</legend>
+                <input type="checkbox" id="A">
+                <label for="A">A</label>
+                <input type="checkbox" id="B">
+                <label for="B">B</label>
+                <input type="checkbox" id="C">
+                <label for="C">C</label>
+                <input type="checkbox" id="D">
+                <label for="D">D</label>
+                <input type="checkbox" id="E">
+                <label for="E">E</label>
+            </fieldset>
+            <fieldset>
+                <legend>Categories</legend>
+                <select id="categoriesSelect">
+                    <option value="0">Tous</option>
+                    <option value="1">Pauvre en sel</option>
+                    <option value="2">Sans sucre</option>
+                    <option value="3">Boost</option>
+                </select>
+            </fieldset>
+        </fieldset>
+    </header>
+
+    <main>
+        <table id="tableCereals">
+            <thead id="thead">
+                <tr class="keys">
+                    <th data-name="id">ID</th>
+                    <th data-name="name">NOM</th>
+                    <th data-name="calories">CALORIES</th>
+                    <th data-name="protein">PROTEÏNES</th>
+                    <th data-name="sodium">SEL</th>
+                    <th data-name="fiber">FIBRES</th>
+                    <th data-name="carbo">GLUCIDES</th>
+                    <th data-name="sugars">SUCRE</th>
+                    <th data-name="potass">POTASSIUM</th>
+                    <th data-name="vitamins">VITAMINES</th>
+                    <th data-name="rating">EVALUATION</th>
+                    <th data-name="rating">NS</th>
+                    <th class="keysDel">DEL</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbody">
+
+            </tbody>
+
+            <tfoot id="tfoot">
+                <tr class="valueTableCereals">
+                    <td >&nbsp;</td>
+                    <td id="nbElement" ></td>
+                    <td id="caloriesAverage"></td>
+                    <td colspan="10">&nbsp;</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
