@@ -19,24 +19,25 @@ for(let h of head){
         cerealsTable.generateTable();
     })
 }
-document.getElementById("inputSearch").addEventListener("input",(e)=>{
-        CerealsEvent.searchCereal(e.target.value);
-        cerealsTable.generateTable();
-});
-document.getElementById("categoriesSelect").addEventListener("change",(e)=>{
-    CerealsEvent.sortCategory(e.target.value);
-    cerealsTable.generateTable();
-});
+
+let inputSearch = document.getElementById("inputSearch");
+let categoriesSelect = document.getElementById("categoriesSelect")
 let inputList = document.querySelectorAll('#cerealsNs input[type="checkbox"]');
-inputList.forEach(i=>{i.addEventListener("click",(e)=>{
+
+CerealsCollection.updateFilter = () =>
+{
     let letters =[]; 
     inputList.forEach(c=>{
         if(c.checked){
             letters.push(c.id);
         }
     });
-    console.log(letters);
-    CerealsEvent.sortNutriscore(letters);
+    cerealsCollection.applyAllFilters(inputSearch.value, categoriesSelect.value, letters)
     cerealsTable.generateTable();
-    })
-});
+}
+
+inputSearch.addEventListener("input",CerealsCollection.updateFilter);
+
+categoriesSelect.addEventListener("change",CerealsCollection.updateFilter);
+
+inputList.forEach(i=>i.addEventListener("click",CerealsCollection.updateFilter));

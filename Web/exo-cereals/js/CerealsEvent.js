@@ -20,14 +20,5 @@ class CerealsEvent{
         }
         CerealsEvent.sortDirection=!CerealsEvent.sortDirection;
     }
-    static searchCereal(value){
-        CerealsEvent.cerealsCollection.searchCereal(value);
-    }
-    static sortCategory(value){
-        CerealsEvent.cerealsCollection.sortCategory(value);
-    }
-    static sortNutriscore(letters){
-        CerealsEvent.cerealsCollection.sortNutriscore(letters);
-    }
 }
 export {CerealsEvent}
